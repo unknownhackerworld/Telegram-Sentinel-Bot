@@ -1,1 +1,4 @@
 config.ini
+crypto_scanner.session
+flagged_messages.csv
+processed_channels.txt
