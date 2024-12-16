@@ -1,6 +1,6 @@
 # Telegram Sentinel - Team Optimizers
 
-Welcome to Telegram Sentinel, a project by Team Optimizers. This guide explains the steps to set up and run the project.
+Welcome to Telegram Sentinel, a project by Team Optimizers. This guide explains the steps to set up and run the project. This Project is made for TN Police Hackathon - 2024
 
 ## Prerequisites
 
