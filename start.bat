@@ -2,10 +2,6 @@
 
 :: Welcome Message
 echo Welcome to Telegram Sentinel - Team Optimizers
-echo Please Replace your API and HASH key from my.telegram.org in config.ini
-echo Thank You
-echo Press Any Key to Install Required Packages
-pause
 
 :: Check if Python is Installed
 python --version >nul 2>&1
@@ -17,8 +13,9 @@ if errorlevel 1 (
 )
 
 python setup_config.py
-pip install -r requirements.txt
 
+echo Setup Successful
+echo.
 python Tele_Bot.py
 echo Bot Execution Successful!
 pause

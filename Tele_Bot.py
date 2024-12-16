@@ -28,10 +28,20 @@ def is_keyword_match(message_text, keywords, threshold=85):
     return False
 
 
+import os
+
 def save_to_csv(flagged_data, file_path="flagged_messages.csv"):
+    headers = ["Channel ID", "Channel Title", "Message Link", "Message ID", "Sender ID", "Credibility Score", "Engagement Score"]
+
+    file_exists = os.path.isfile(file_path) 
     with open(file_path, "a", newline="", encoding="utf-8") as csvfile:
         writer = csv.writer(csvfile)
+        
+        if not file_exists: 
+            writer.writerow(headers)
+        
         writer.writerows(flagged_data)
+
 
 def load_processed_channels(file_path="processed_channels.txt"):
     try:
